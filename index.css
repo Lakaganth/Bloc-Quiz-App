@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: rgb(160, 154, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(172, 105, 169, 1) 0%,
+    rgba(160, 154, 255, 1) 100%
+  );
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo-img {
+  width: 210px;
+  height: 205px;
+  margin-top: 30px;
+}
+
+.logo-heading {
+  font-family: "Rubik", sans-serif;
+  text-transform: uppercase;
+}
+
+.logo-heading h1 {
+  color: #ffffff;
+  font-size: 63px;
+  text-align: center;
+  letter-spacing: 7px;
+  padding-top: 50px;
+  text-shadow: 6px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.logo-heading h2 {
+  color: #222225;
+  font-size: 54px;
+  letter-spacing: 4px;
+  text-align: center;
+}
+
+.logo-text {
+  color: #ffffff;
+  font-size: 24px;
+  text-align: center;
+  padding-top: 30px;
+  letter-spacing: 2px;
+  text-shadow: 6px 2px 10px rgba(0, 0, 0, 0.6);
+}
+
+.btn-start {
+  padding-top: 45px;
+}
+
+.btn-quiz-start {
+  width: 273px;
+  height: 76px;
+  background-color: #09060c;
+  color: #8e5ab5;
+  font-size: 41px;
+  letter-spacing: 5px;
+  border-radius: 12px;
+  border: none;
+  -webkit-box-shadow: 9px 10px 6px -1px rgba(0, 0, 0, 0.18);
+  box-shadow: 9px 10px 6px -1px rgba(0, 0, 0, 0.18);
+}
+
+.score-badge {
+  letter-spacing: 3px;
+  margin-top: 10%;
+  margin-left: 50%;
+  border: 4px solid #fff700;
+  width: 150px;
+  height: 55px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+}
+
+.score-badge p {
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.quiz-q-form {
+  color: #fff7f7;
+  min-height: 100vh;
+}
+
+.question-badge {
+  letter-spacing: 3px;
+  margin-top: 10%;
+  margin-left: -3.5%;
+  background-color: #fff700;
+  width: 200px;
+  height: 45px;
+  border-radius: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #0a0a0a;
+  font-weight: 600;
+  -webkit-box-shadow: 4px 6px 13px -4px #000000;
+  box-shadow: 4px 6px 13px -4px #000000;
+}
+.question-badge p {
+  margin-bottom: 0;
+}
+
+.questions p {
+  font-size: 24px;
+  letter-spacing: 4px;
+  font-weight: 300;
+  margin-top: 20%;
+  text-align: center;
+}
+
+.answer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: 15vh;
+  cursor: pointer;
+}
+
+.answer-select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 48px;
+
+  height: 70px;
+  color: #8e5ab5;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+
+  border-radius: 18px;
+  padding-top: 1px;
+
+  margin-top: 22px;
+  margin-bottom: 0;
+  background-color: #fff7f7;
+}
+
+input[type="radio"] {
+  flex: 0 0 auto;
+  margin-right: 15px;
+}
+
+.answer-select > input:checked {
+  font-size: 32px;
+}
+/* Button Classes */
+.buttons {
+  margin-left: 38%;
+}
+
+.btn {
+  height: 40px;
+  border: none;
+  background-color: #fff700;
+  color: #0a0a0a;
+  text-transform: uppercase;
+
+  padding: 0 20px;
+  border-radius: 20px;
+  font-weight: 900;
+  cursor: pointer;
+  margin: 30px 0 0 0;
+  -webkit-box-shadow: 4px 6px 13px -4px #000000;
+  box-shadow: 4px 6px 13px -4px #000000;
+}
+
+.btn:active {
+  color: white;
+  background-color: black;
+}
+
+/* Results Page */
+
+.result-bar {
+  width: 370px;
+  height: 370px;
+  border-radius: 50%;
+  background-color: #fff7f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20% auto;
+  -webkit-box-shadow: 4px 6px 13px -4px #000000;
+  box-shadow: 4px 6px 13px -4px #000000;
+}
+
+.result-bar h3 {
+  color: #8e5ab5;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 62px;
+  text-align: center;
+}
+
+.result-bar h2 {
+  color: #8e5ab5;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 3px;
+  font-size: 43px;
+  text-align: center;
+}
+
+.result-bar p {
+  color: #682d96;
+  margin: 0;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.btn-next {
+  margin-left: 35%;
+  -webkit-box-shadow: 4px 6px 13px -4px #000000;
+  box-shadow: 4px 6px 13px -4px #000000;
+}
