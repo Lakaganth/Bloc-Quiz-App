@@ -6,7 +6,7 @@ const quizComponent = () => {
   //Render the Landing Page
   renderLandingPageComponent();
 
-  renderQuestionComponent();
+  // renderQuestionComponent();
 
   //userSelectOption();
   //   renderNextQuestion;
