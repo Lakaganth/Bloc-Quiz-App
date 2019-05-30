@@ -57,7 +57,7 @@ const QUIZ = [
   },
   {
     id: 9,
-    question: "How many yellow cards earn a palyer the red card",
+    question: "How many yellow cards earn a player the red card",
     answer: ["2", "1", "4", "8"],
     correct: "2",
     didYouKnow: "Hello"

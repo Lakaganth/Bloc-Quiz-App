@@ -1,5 +1,6 @@
 const questionhtml = () => {
   return `
+  <section class ="q-section">
       <div class ="score-badge"> <p>SCORE  <span>${score}</span> </p>
       
       </div>
@@ -59,13 +60,16 @@ const questionhtml = () => {
           <button type="submit" class=" btn btn-submit">Submit</button>
           </div>
         </form>
-      </div>`;
+      </div>
+      </section>`;
 };
 
 const resulthtml = (r, msg) => {
   return `
   <div class ="score-badge"> <p>SCORE  <span>${score}</span> </p>
     </div>
+
+    <div class = "contain">
   <div class ="result-bar scale-up-center">
   <h3>${r}</h3>
   <p> ${msg} </p>
@@ -73,5 +77,15 @@ const resulthtml = (r, msg) => {
 
   
   <button type="submit" class=" btn btn-next">NEXT</button>
+  </div>
 `;
+};
+
+const finalScoreHTML = () => {
+  return ` <div class ="result-bar">
+     
+        <h2>Your score is ${score} / ${QUIZ.length}</h2>
+        <button type="submit" class="btn btn-primary btn-restart">Restart</button>
+      
+    </div>`;
 };

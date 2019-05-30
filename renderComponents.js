@@ -55,14 +55,7 @@ const userSelectOption = e => {
 };
 
 const resultIs = (res, msg) => {
-  console.log("4.Enterd Results page");
-  if (res === "correct") {
-    $(".quiz-q-form").html(displayResult(res, msg));
-
-    console.log(score);
-  } else {
-    $(".quiz-q-form").html(displayResult(res, msg));
-  }
+  $(".quiz-q-form").html(displayResult(res, msg));
 };
 
 const displayResult = (r, msg) => {
@@ -78,7 +71,7 @@ const updateScore = () => {
 // Render the landing page
 
 const renderLandingPageComponent = () => {
-  console.log("1. Entered Landing page");
+  $(".quiz-q-form").hide();
 
   $(".landing-page").on("click", `.btn-quiz-start`, displayQuestions);
 };
@@ -93,7 +86,7 @@ const displayQuestions = () => {
   $(".quiz-content").remove();
   $(".landing-page").remove();
 
-  $(".quiz-q-form").css("dispay", "block");
+  $(".quiz-q-form").show();
 
   $(".quiz-q-form").html(quizForm());
   console.log("2. Enterd Question render component");
