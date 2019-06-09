@@ -36,7 +36,7 @@ const renderNextQuestion = () => {
 const userSelectOption = e => {
   e.preventDefault();
   console.log("3. Entered USer Select component");
-  const userAnswer = $("input:checked").val();
+  const userAnswer = $("#q-option:checked").val();
   const correctAnswer = `${QUIZ[qNumber].correct}`;
   if (userAnswer === correctAnswer) {
     updateScore();

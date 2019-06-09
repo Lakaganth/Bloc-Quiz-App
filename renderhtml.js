@@ -7,23 +7,24 @@ const questionhtml = () => {
       <div class ="question-badge"> <p>QUESTION  <span>${qNumber +
         1}</span> </p>
       </div>
-      <div class="container questions">
+      <div class="container   questions">
         <p> ${QUIZ[qNumber].question} </p>
         <form id="q-question-form">
           <fieldset>
-          <div className="answer">
-            <label for="q-option" class="answer-select">
+          
+            <label  class="answer-select">
               <input
                 type="radio"
                 name="answer"
                 id="q-option"
                 required
+                checked
                 value=${QUIZ[qNumber].answer[0]}
               />
               <span>${QUIZ[qNumber].answer[0]}</span>
             </label>
-            </div> <div className="answer">
-            <label for="q-option" class="answer-select">
+            <br>
+            <label  class="answer-select">
               <input
                 type="radio"
                 name="answer"
@@ -32,8 +33,8 @@ const questionhtml = () => {
                 value=${QUIZ[qNumber].answer[1]} />
               <span>${QUIZ[qNumber].answer[1]}</span>
             </label>
-            </div> <div className="answer">
-            <label for="q-option" class="answer-select">
+            <br>
+            <label  class="answer-select">
               <input
                 type="radio"
                 name="answer"
@@ -43,8 +44,8 @@ const questionhtml = () => {
               />
               <span>${QUIZ[qNumber].answer[2]}</span>
             </label>
-            </div> <div className="answer">
-            <label for="q-option" class="answer-select">
+            <br>
+            <label  class="answer-select">
               <input
                 type="radio"
                 name="answer"
@@ -54,11 +55,12 @@ const questionhtml = () => {
               />
               <span>${QUIZ[qNumber].answer[3]}</span>
             </label>
-            </div>
-          </fieldset>
-          <div class="buttons">
+            <br>
+            <div class="buttons">
           <button type="submit" class=" btn btn-submit">Submit</button>
           </div>
+          </fieldset>
+          
         </form>
       </div>
       </section>`;

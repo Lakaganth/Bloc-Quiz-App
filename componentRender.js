@@ -32,7 +32,7 @@ const quizForm = () => {
 const userSelectOption = e => {
   e.preventDefault();
 
-  const userAnswer = $("input:checked").val();
+  const userAnswer = $("#q-option:checked").val();
   const correctAnswer = `${QUIZ[qNumber].correct}`;
   if (userAnswer === correctAnswer) {
     updateScore();
